@@ -8,6 +8,7 @@ FROM phpdockerio/php71-fpm
 RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get -y --no-install-recommends install \
+    unzip \
     php7.1-mcrypt \
     php7.1-mysql \
     php7.1-intl \
